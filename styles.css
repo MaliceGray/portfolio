@@ -1,3 +1,15 @@
+
+/* colour palette*/
+:root {
+    
+    --buff: #FFC28B;
+    --coral: #FE6D4E;
+    --grey: #819898;
+    --cyan: #4C7D8E;
+    --lightblue: #174D7C;
+    --black: #1C284E;
+}
+
 h1 {
-    color: red;
+    color: darkgrey;
 }
