@@ -178,3 +178,18 @@ p {
     list-style: none;
     font-size: 1.2rem;
 }
+
+footer {
+    
+    background-color: var(--grey);
+    padding: 0.6rem 1.5rem;
+    font-size: 0.8rem;
+    
+}
+
+footer p {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    color: var(--cyan);
+}
