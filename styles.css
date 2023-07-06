@@ -4,7 +4,7 @@
     
     --buff: #FFC28B;
     --coral: #FE6D4E;
-    --grey: #819898;
+    --grey: #b9d0d0;
     --cyan: #4C7D8E;
     --lightblue: #174D7C;
     --black: #1C284E;
@@ -119,6 +119,42 @@ p {
     color: var(--black);
 }
 
-#about p {
+
+
+#projects .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0 auto;
+    padding: 0 6rem;
+    gap: 30px;
+}
+
+#projects figure {
+    background-color: var(--buff);
+    padding: 2rem;
+    border-radius: 8px;
+    transition: transform 0.4s ease-in;
+    text-align: center;
+}
+
+#projects figure:hover {
+    cursor: pointer;
+    transform: scale(1.05);
     
+}
+
+#projects figure img {
+    width: 100%;
+    border: 1px solid white;
+    margin-bottom: 2rem;
+}
+
+#projects figcaption {
+    color: var(--cyan);
+    text-align: left;
+    
+}
+#projects figcaption strong {
+    font-size: 1.2rem;
 }
