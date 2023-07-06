@@ -93,12 +93,18 @@ nav ul {
 nav li {
     list-style-type: none;
     padding-right: 2rem;
-   
+    
+    
 }
 
 nav li a {
     text-decoration: none;
     color: var(--buff);
+    transition: color 0.3s ease-in;
+}
+
+nav li a:hover {
+    color: white;
 }
 
 
@@ -156,5 +162,19 @@ p {
     
 }
 #projects figcaption strong {
+    font-size: 1.2rem;
+}
+
+#skills ul {
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+
+}
+
+#skills li {
+    padding: 3rem;
+    list-style: none;
     font-size: 1.2rem;
 }
