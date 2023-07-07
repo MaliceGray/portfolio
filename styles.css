@@ -64,6 +64,31 @@ header {
     bottom:10%;
 }
 
+#word {
+    font-size: 0;
+}
+
+#word span {
+    font-size: 2rem;
+
+    --colourOne: pink;
+    --colourTwo: green;
+
+    animation-name: changeColor;
+    animation-duration: var(--duration);
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes changeColor {
+    from {
+        color: var(--colourOne);
+    }
+    to {
+        color: var(--colourTwo);
+    }
+}
+
 .title-container h4 {
     position: absolute;
     bottom: 30%;
