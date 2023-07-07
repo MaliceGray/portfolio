@@ -28,6 +28,7 @@ header {
 }
 
 .title-container { 
+    display: inline-flex;
     padding-left: 5%;
     padding-right: 5%;
     height: 60vh;
@@ -44,7 +45,7 @@ header {
     color: var(--black);
 }
 
-.name h1:last-child {
+.name .grey {
     /* color: var(--grey);
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     font-size: 9.7rem; */
@@ -56,16 +57,19 @@ header {
     letter-spacing: 0;
 }
 
-.title-container h2 {
+.title-container h4 {
+    position: absolute;
     text-align: right;
     font-size: 2rem;
     position: absolute;
-    right: 10%;
+    right: 26%;
     bottom:10%;
+
 }
 
 #word {
     font-size: 0;
+    right: 10%;
 }
 
 #word span {
@@ -89,7 +93,7 @@ header {
     }
 }
 
-.title-container h4 {
+.title-container h2 {
     position: absolute;
     bottom: 30%;
     letter-spacing: 0.3rem;
