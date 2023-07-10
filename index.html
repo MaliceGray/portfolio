@@ -4,38 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Shizuru' rel='stylesheet'>
+<script src="https://kit.fontawesome.com/0211638ceb.js" crossorigin="anonymous"></script>
     <script src="./index.js" defer></script>
+  
     <title>Maggie's Colourful Portfolio</title>
 </head>
 <body>
     <header>
-        <h1>Maggie Gray</h1>
-        <h2>& I love colour</h2>
+
+
+        <!-- header needs to be set up as a 3-row grid once MAGGIE GRAY is made as a logo:
+        Maggie Gray (left justified)
+        Web designer / developer (left justified)
+        & I love colour (right justified) -->
+        <div class="title-container">
+            <div class="name">
+                <h1>Maggie</h1>
+                <h1 class="grey">Gray</h1>
+                <h2>WEB DESIGNER / DEVELOPER</h2>
+            </div>
+            <h4>& I love </h4>
+            <h4 id="word">
+                <span>c</span>
+                <span>o</span>
+                <span>l</span>
+                <span>o</span>
+                <span>u</span>
+                <span>r</span>
+                <span>!</span>
+            </h4>
+            
+        </div>
     </header>
 
     <nav>
         <ul role="presentation">
-            <li id="about">About</li>
-            <li id="projects">Projects</li>
-            <li id="skills">Skills</li>
-            <li id="contact">Contact</li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="./contact.html">Contact</a></li>
         </ul>
     </nav>
 
     <!-- About -->
 
-    <h3>About</h3>
-    <p>Hi, I'm Maggie. Nice to see you here. I'm a web designer/developer based in the UK. I love colour.
-    </p>
-    <p>I have a First Class degree in Fine Art and moved into graphic design. But I wanted to see my static designs come to life - be interacted with and become dynamic. So I peeked into the diverse world of web development and haven't looked back...</p>
-    <p>I have been working on various projects, from a time-mananagement app for kids to a random sentance generator. You can see examples of my work below</p>
+    <section id="about">
+        <h3>About</h3>
+        <p>Hi, I'm Maggie. Nice to see you here. I'm a web designer/developer based in the UK. I work in beautiful monochrome and glorious technicolour.<br>
+        </p>
+        <p>I have a First Class degree in Fine Art and subsequently moved into graphic design. But I wanted to see my static designs come to life - to be interacted with and become dynamic. So I peeked into the diverse world of web development and haven't looked back...<br></p>
+        <p>I have been working on various projects, from a <strong><a href="#clock-block">time-mananagement app</a></strong> for kids to a random sentance generator. You can see examples of my work below.</p>
+    </section>
 
     <!-- Projects -->
 
-    <h3>Projects</h3>
+    <section id="projects">
+        <h3>Projects</h3>
+        <div class="grid">
+            <figure id="clock-block">
+                <img src="/images/clockBlock.png" alt="screen shot of Clock Block Challenge app">
+                <figcaption><strong>Clock Block Challenge</strong> is a time-management app for kids. It provides a fun and motivational platform to aid children to get ready for school on time!</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/weather.png" alt="screen shot of Sunrise Street app">
+                <figcaption><strong>Weather App</strong> uses an API to source information about the time of day and weather in the user's chosen city.</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/sunrise.png" alt="screen shot of Sunrise Street app">
+                <figcaption><strong>Sunrise Street</strong> is a mini game the shows which skyscrapers see the sun and which remain in the shadows based on how tall each building is comparitive to its neighbours.</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/retroSnakes.png" alt="screen shot of a remake of the classic snakes computer game">
+                <figcaption><strong>Retro Snakes Game</strong> is a remake of the classic Snakes computer game.</figcaption>
+            </figure>
+        </div>
+    </section>
 
     <!-- Skills -->
 
-    <h3>Skills</h3>
+    <section id="skills">
+        <h3>Skills</h3>
+        <ul role="presentation">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Git</li>
+        </ul>
+    </section>
+
+    <footer>
+      
+
+        <p>Copyright Maggie Gray 2023</p>
+    </footer>
+
 </body>
 </html>

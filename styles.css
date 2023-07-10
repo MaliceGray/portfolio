@@ -1,3 +1,263 @@
-h1 {
-    color: red;
+
+/* colour palette*/
+:root {
+    --buff: #FFC28B;
+    --coral: #FE6D4E;
+    --grey: #9b9b9b;
+    --cyan: #4C7D8E;
+    --lightblue: #174D7C;
+    --black: #1C284E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    height: 60vh;
+    background-color: var(--grey);
+    margin: 0 auto;
+    color: white;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+}
+
+.title-container { 
+    display: inline-flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 60vh;
+    padding-top: 4rem;
+    width: 60%;
+    margin: 0 5%;
+}
+
+.name h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    line-height: 90px;
+    color: var(--black);
+}
+
+.name .grey {
+    /* color: var(--grey);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 9.7rem; */
+    font-family: Shizuru, sans-serif;
+    color: var(--black);
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 8.8rem;
+    letter-spacing: 0;
+}
+
+.title-container h4 {
+    position: absolute;
+    text-align: right;
+    font-size: 2rem;
+    position: absolute;
+    right: 26%;
+    bottom:10%;
+
+}
+
+#word {
+    font-size: 0;
+    right: 10%;
+}
+
+#word span {
+    font-size: 2rem;
+
+    --colourOne: pink;
+    --colourTwo: green;
+
+    animation-name: changeColor;
+    animation-duration: var(--duration);
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes changeColor {
+    from {
+        color: var(--colourOne);
+    }
+    to {
+        color: var(--colourTwo);
+    }
+}
+
+.title-container h2 {
+    position: absolute;
+    bottom: 30%;
+    letter-spacing: 0.3rem;
+    font-weight: 300;
+}
+
+nav {
+    background-color: var(--coral);
+    color: #fff;
+    width: 100%;
+    font-weight: 700;
+    padding-left: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1; 
+    height: 35px;  
+}
+
+nav ul {
+    display: inline-flex;
+    padding: .5rem;
+    white-space: nowrap;
+    position: absolute;
+    right: 0;
+}
+
+nav li {
+    list-style-type: none;
+    padding-right: 2rem;
+    
+    
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--buff);
+    transition: color 0.3s ease-in;
+}
+
+nav li a:hover {
+    color: white;
+}
+
+
+h3 {
+    font-family: Shizuru, sans-serif;
+    font-size: 5rem;
+    font-weight: 100;
+    margin: 5rem 0 0 0.3rem;
+    padding-bottom: 1.6rem;
+    color: var(--coral);
+}
+
+p {
+    margin: 0 6rem;
+    font-size: 16px;
+    line-height: 1.6rem;
+    padding-bottom: 1.6rem;
+    color: var(--black);
+}
+
+p a {
+    text-decoration: none;
+}
+
+
+
+#projects .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0 auto;
+    padding: 0 6rem;
+    gap: 30px;
+}
+
+#projects figure {
+    background-color: var(--buff);
+    padding: 2rem;
+    border-radius: 8px;
+    transition: transform 0.4s ease-in;
+    text-align: center;
+}
+
+#projects figure:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    
+}
+
+#projects figure img {
+    width: 100%;
+    border: 1px solid white;
+    margin-bottom: 2rem;
+}
+
+#projects figcaption {
+    color: var(--cyan);
+    text-align: left;
+    
+}
+#projects figcaption strong {
+    font-size: 1.2rem;
+}
+
+#skills ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    margin: 0 auto;
+}
+
+#skills li {
+    padding: 3rem;
+    list-style: none;
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+}
+
+footer {
+   
+    background-color: var(--grey);
+    padding: 0.6rem 1.5rem;
+    font-size: 0.8rem;
+    width: 100%;
+    height: 50px;
+}
+
+footer p {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+@media screen and (max-width: 650px) {
+    #projects .grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, auto);
+    } 
+}
+
+@media screen and (max-width: 540px) {
+    h3 {
+        font-size: 4rem;
+    }
+
+    #skills ul {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr); 
+        margin-bottom: 4rem;
+    }
+
+    #skills li {
+        padding: 0;
+        font-size: 1rem;
+       
+    }
+
+    nav {
+        position: relative;
+    }
+
+    nav ul {
+        display: none;
+    }
 }
